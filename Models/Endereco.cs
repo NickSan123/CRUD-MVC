@@ -10,28 +10,20 @@ namespace CRUD_MVC.Models
         [Key]
         [Column("id")]
         public int Id { get; set; }
-
         [Column("rua")]
-        public required string Rua { get; set; }
-
+        public string Rua { get; set; }
         [Column("bairro")]
         public string Bairro { get; set; }
-
         [Column("cidade")]
         public string Cidade { get; set; }
-
         [Column("tipo")]
-        public int Tipo { get; set; } = 1; // 1 - endereco padrão, 2 - endereco de cobranca, 3 - endereco adicional
-
+        public int Tipo { get; set; } = 1; //1 - padrão, 2 - cobrança, 3 - adicional
         [Column("cep")]
-        public int Cep { get; set; }
+        public string Cep { get; set; }  // Alterado para string para permitir zeros à esquerda
 
-        // FK para a entidade Pessoa
+        // Relacionamento com Pessoa
         [ForeignKey("Pessoa")]
         public int PessoaId { get; set; }
 
-        // Propriedade de navegação para a relação inversa
-        [JsonIgnore]
-        public Pessoa? Pessoa { get; set; }
     }
 }

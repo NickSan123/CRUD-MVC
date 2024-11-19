@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.SqlTypes;
+using System.Text.Json.Serialization;
 
 namespace CRUD_MVC.Models
 {
@@ -16,6 +17,8 @@ namespace CRUD_MVC.Models
         public DateTime DataNascimento { get; set; }
         [Column("cpf")]
         public string Cpf { get; set; }
-        public List<Endereco>? Enderecos { get; set; }
+
+        // Relacionamento com Endereços
+        public List<Endereco> Enderecos { get; set; }
     }
 }

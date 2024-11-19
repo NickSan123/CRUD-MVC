@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35208.52
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD MVC", "CRUD MVC.csproj", "{8677E2B7-EDD1-4A79-8673-AA16141AF5C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD MVC", "CRUD MVC.csproj", "{8677E2B7-EDD1-4A79-8673-AA16141AF5C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD MVC.Tests", "..\CRUD MVC.Tests\CRUD MVC.Tests.csproj", "{C1D89670-2CE7-4295-8D71-D7CFE59669CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8677E2B7-EDD1-4A79-8673-AA16141AF5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8677E2B7-EDD1-4A79-8673-AA16141AF5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8677E2B7-EDD1-4A79-8673-AA16141AF5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1D89670-2CE7-4295-8D71-D7CFE59669CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1D89670-2CE7-4295-8D71-D7CFE59669CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1D89670-2CE7-4295-8D71-D7CFE59669CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1D89670-2CE7-4295-8D71-D7CFE59669CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -19,6 +19,10 @@ namespace CRUD_MVC.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            // Se necessário, você pode adicionar configurações adicionais aqui
+            // Por exemplo, configurar a relação entre Pessoa e Endereco
+      
         }
     }
 
